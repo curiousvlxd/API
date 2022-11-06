@@ -1,0 +1,33 @@
+GET https://localhost:3000/
+
+###
+
+POST https://localhost:3000/news
+Content-Type: application/json
+
+{
+    "title": "TEST 192_1_2",
+    "text": "Текст новини",
+    "img": "",
+    "isActive": 0,
+    "author_id": 3
+}
+
+###
+DELETE https://localhost:3000/news
+
+###
+GET https://localhost:3000/news/320
+
+###
+ PUT https://localhost:3000/news/1
+Content-Type: application/json
+
+{
+    "title": "UPDATE NEWS",
+    "img": "PATH_2"
+}
+ 
+###
+
+DELETE https://localhost:3000/news/200

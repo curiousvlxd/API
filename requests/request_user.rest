@@ -1,0 +1,13 @@
+##
+POST https://localhost:3000/user
+Content-Type: application/json
+
+{
+    "name" : "John",
+    "email" : "johndoe@gmail.com",
+    "password" : "123",
+    "repeat_password" : "123"
+}
+
+###
+
