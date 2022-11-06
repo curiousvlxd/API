@@ -5,8 +5,11 @@ import config from "./config/main.js";
 import https from 'https';
 import expressSession from 'express-session';
 import morgan from 'morgan';
+import cors from 'cors';
+
 
 const app = express();
+app.use(cors());
 morgan.token('host', function(req, res) {
     return req.hostname;
 });
